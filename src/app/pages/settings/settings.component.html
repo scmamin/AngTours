@@ -1,0 +1,14 @@
+<p-button label="Back" styleClass="p-button-link back-button" routerLink="/tours"></p-button>
+
+<div class="settings-container">
+  <h2>Настройки</h2>
+  <div class="menu-items">
+    @for (item of menuItems; track item.route) {
+      <p-button
+        [label]="item.label"
+        styleClass="p-button-link menu-button"
+        [routerLink]="item.route"
+      ></p-button>
+    }
+  </div>
+</div>

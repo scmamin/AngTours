@@ -28,8 +28,8 @@ export class AuthorizationComponent implements OnInit {
 		};
 		this.userService.authUser(user).subscribe(
 			() => {
-				this.initToast('success', 'Вы успешно авторизовались');
-				this.router.navigate(['tickets']);
+				this.userService.setUser(user);
+				this.router.navigate(['tours']);
 			},
 			() => {
 				this.initToast('error', 'Произошла ошибка');

@@ -1,0 +1,71 @@
+.settings-container {
+	padding: 30px;
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	min-height: 300px;
+
+	h2 {
+		margin-bottom: 30px;
+		font-size: 28px;
+		font-weight: 600;
+		color: #333;
+		text-align: center;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: #0057ff;
+			margin: 10px auto 0;
+			border-radius: 2px;
+		}
+	}
+
+	.menu-items {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding: 20px;
+		background-color: #f8f9fa;
+		border-radius: 8px;
+		box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+	}
+}
+
+.back-button {
+	margin-bottom: 20px;
+	display: block;
+
+	button {
+		color: #0057ff;
+
+		&:hover {
+			color: #003bb5;
+		}
+	}
+}
+
+.menu-button {
+	display: block;
+	width: 100%;
+
+	button {
+		display: flex;
+		justify-content: center;
+		padding: 12px 20px;
+		font-size: 16px;
+		color: #333;
+		background-color: #e9ecef;
+		border-radius: 6px;
+
+		&:hover {
+			background-color: #d3d7db;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		}
+	}
+}
