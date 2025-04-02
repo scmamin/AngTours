@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchPipe implements PipeTransform {
 	transform(value: any[], searchValue: string, prop: string): any[] {
-    console.log('searchValue', searchValue)
+    //console.log('searchValue', searchValue)
 		if (!searchValue) return value;
 		if (Array.isArray(value)) {
 			const regExp = new RegExp(searchValue, 'i');

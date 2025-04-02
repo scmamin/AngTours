@@ -1,17 +1,21 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-	selector: 'app-settings',
-	imports: [ButtonModule, RouterLink, CommonModule],
-	templateUrl: './settings.component.html',
-	styleUrl: './settings.component.scss',
+  selector: 'app-settings',
+  standalone: true,
+  imports: [ButtonModule, RouterLink, RouterOutlet, CommonModule],
+  templateUrl: './settings.component.html',
+  styleUrls: ['./settings.component.scss'],
 })
 export class SettingsComponent {
-	menuItems = [
-		{ label: 'Смена пароля', route: '/settings/change-password' },
-		{ label: 'Статистика', route: '/settings/statistics' },
-	];
+  menuItems = [
+    { label: 'Смена пароля', route: 'change-password' },
+    { label: 'Статистика', route: 'statistic' },
+  ];
 }
+
+
+

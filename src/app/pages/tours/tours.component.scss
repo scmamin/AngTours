@@ -3,7 +3,13 @@
 }
 
 .tours-list {
-	& .tours-item {
+	& .tour-item {
 		position: relative;
+		&.active {
+			border: 1px solid red;
+		}
+	}
+	.no-data {
+		margin-top: 20px;
 	}
 }

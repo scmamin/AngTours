@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { NgClass } from '@angular/common';
 import { ToastModule } from 'primeng/toast';
@@ -9,7 +8,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
 	selector: 'app-change-password',
-	imports: [FormsModule, ButtonModule, RouterLink, NgClass, ToastModule, CommonModule],
+	imports: [FormsModule, ButtonModule, NgClass, ToastModule, CommonModule],
 	providers: [MessageService],
 	templateUrl: './change-password.component.html',
 	styleUrl: './change-password.component.scss',
@@ -36,5 +35,7 @@ export class ChangePasswordComponent {
 				life: 3000,
 			});
 		}
+		this.newPassword = '';
+		this.confirmPassword = '';
 	}
 }

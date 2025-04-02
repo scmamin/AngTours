@@ -14,7 +14,7 @@ export class ConfigService {
 	loadObservable(): Observable<any> {
 		const jsonFile = `${API.config}`;
 		return this.http.get(jsonFile).pipe(tap(data => {
-      console.log(data)
+      //console.log(data)
     }));
 	}
 
@@ -43,7 +43,7 @@ export class ConfigService {
 		});
 
 		const promiseArr = [configPromise];
-		console.log(promiseArr);
+		//console.log(promiseArr);
 		return Promise.all(promiseArr);
 	}
 }

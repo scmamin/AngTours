@@ -27,7 +27,6 @@ export class RegistrationComponent implements OnInit {
 	ngOnInit(): void {}
 
 	onAuth(ev: Event): void {
-		console.log('ev', ev);
 		const postObj = { login: this.login, password: this.password, email: this.email } as IUserRegister;
 		this.userService.registerUser(postObj).subscribe(
 			() => {

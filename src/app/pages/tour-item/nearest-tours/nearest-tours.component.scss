@@ -1,3 +1,21 @@
 :host {
-  display: block;
+	display: block;
+}
+
+.tours-container {
+	max-width: 340px;
+	min-width: 340px;
+	margin: 0 auto;
+}
+
+.tour-item-galleria {
+	width: 100%;
+}
+
+.no-tours-message {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+	font-size: 16px;
+	font-weight: 500;
 }

@@ -17,3 +17,8 @@ export interface ITour {
 	citizenship?: string;
 	locationId: string;
 }
+
+export interface TourType {
+	key: string;
+	label: string;
+}

@@ -1,1 +1,22 @@
-<div>aside</div>
+<div class="aside m-3">
+	<p>Выберите тип тура</p>
+	<p-select
+		[options]="tourTypes"
+		[(ngModel)]="selectedType"
+		(onChange)="changeTourType($event)"
+		optionLabel="label"
+		placeholder="Выберите тип тура"
+		class="w-full md:w-56"
+	></p-select>
+
+	<div class="my-3">
+		<p-datepicker
+			[showIcon]="true"
+			[(ngModel)]="date"
+			(onSelect)="changeDate($event)"
+			(onClearClick)="clearDate()"
+			[showButtonBar]="true"
+			dateFormat="dd-mm-yy"
+		/>
+	</div>
+</div>
